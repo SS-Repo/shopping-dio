@@ -6,12 +6,12 @@ import { Container } from '@material-ui/core/';
 import Header from './components/Header';
 
 
-//Projeto Shopping DIO - CAP:Desenvolvendo as categorias dinamicamente - Part 1
+//Projeto Shopping DIO - CAP:Recapitulandpo a estrutura de codigo.
 const App = () => {
 
   return(
     <Provider store={store}>
-      <Container maxWidth="xl">
+      <Container maxWidth='xl'>
         <Router>
           <Header />
           <Routes />

@@ -1,5 +1,5 @@
 import React from "react";
-import { connect } from "react-redux";
+import { useSelector } from "react-redux";
 import { Paper, Grid, Typography, List, makeStyles } from '@material-ui/core/';
 import Item from "../components/Item";
 import Card from "../components/Card";
@@ -15,10 +15,35 @@ const useStyles = makeStyles((theme) => ({
     },
   }));
 
-const HomePage = ({ products }) =>{
-    console.log(products);
-
+const HomePage = () =>{
+    const products = useSelector(state => state.products);
     const classes = useStyles();
+
+    const categorys = products.map(
+        category => {
+            const container = { };
+            container['id'] = category.id_categorys;
+            container['name'] = category.name_categorys;
+            return container;
+        }
+    )
+
+    const category = categorys.map(JSON.stringify)
+                    .filter(function(item,index,arr){
+                        return arr.indexOf(item, index + 1 ) === -1;
+                    })
+                    .map(JSON.parse)
+
+    const arrayCategory = category.map(category =>categorys.name)
+    let count = {}
+
+    for(let i = 0; i < arrayCategory.lenght; i++){
+        {
+            let key = arrayCategory[i];
+            count[key] = (count[key] ? count[key] + 1 : 1); 
+        }
+    }
+
 
     return(
         <>
@@ -29,18 +54,15 @@ const HomePage = ({ products }) =>{
                             Categorias
                         </Typography>
                         <List>
-                            <Item 
-                                name="Times Nacionais"
-                                details="3"
-                            />
-                            <Item 
-                                 name="Times Internacionais"
-                                 details="4"
-                            />
-                            <Item 
-                                name="Times Historicos"
-                                details="5"
-                            />
+                            {category.map( category => {
+                                return(
+                                    <Item 
+                                    key = { category.id }
+                                    name= { category.name } 
+                                    details= { count[category.name]}
+                                    />
+                                )
+                            })}
                         </List>
                     </Paper>
                     </Grid>
@@ -49,9 +71,7 @@ const HomePage = ({ products }) =>{
                             return(
                                 <Card
                                 key={item.id_product}
-                                name={item.name_product}
-                                price={item.price}
-                                image={item.image}    
+                                product={item}   
                             >
                                 {item.name_product}        
                             </Card>
@@ -63,8 +83,4 @@ const HomePage = ({ products }) =>{
             )
 }
 
-const mapStateToProps = state => ({
-    products: state.products
-})
-
-export default connect(mapStateToProps)(HomePage);
+export default HomePage;

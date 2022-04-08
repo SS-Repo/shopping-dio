@@ -66,7 +66,7 @@ const HomePage = () =>{
                         </List>
                     </Paper>
                     </Grid>
-                    <Grid container xs={9} spacing={3} className={classes.root}>
+                    <Grid container item xs={9} spacing={3} className={classes.root}>
                         {products.map( item => {
                             return(
                                 <Card

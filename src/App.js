@@ -5,9 +5,12 @@ import Routes from './routes';
 import { Container } from '@material-ui/core/'; 
 import Header from './components/Header';
 
-
-//Projeto Shopping DIO - CAP:Recapitulandpo a estrutura de codigo.
 const App = () => {
+
+  const localCart = JSON.parse(localStorage.getItem('dioshopping: cart'))
+  if(localCart !== null){
+    store.dispatch({type: 'CHANGE_CART', localCart})
+  }
 
   return(
     <Provider store={store}>

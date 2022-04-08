@@ -6,7 +6,7 @@ const Contatos = () =>{
     return(
         <>
             <h1>Contatos</h1>
-            <Grid container direction="row" xs={12}>
+            <Grid container direction="row" item xs={12}>
                 <TextField id="name" label="Name" fullWidth/>
                 <TextField id="message" label="Message" fullWidth/>
             </Grid>

@@ -53,7 +53,7 @@ Para iniciar o server digite:
 yarn start
 `
 
-PREVIEW
+## PREVIEW
 
 ![filmar tela do pc - Pesquisa Google - Google Chrome 2022-04-10 16-08-12_Trim](https://user-images.githubusercontent.com/23404398/162636725-e16f8d2f-5e18-42be-916d-123c59b85a72.gif)
 

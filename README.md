@@ -53,6 +53,7 @@ Para iniciar o server digite:
 yarn start
 `
 
+email:sergio.desenvolvedor.web@gmail.com
 
 
 

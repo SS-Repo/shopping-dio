@@ -30,16 +30,21 @@ Clone o projeto ou faça o download dos pacotes e descompacte o arquivo.
 Inicie o VSCode ou sua IDE Favorita.
 
 Abra o terminal de digite:
+
 `
 cd shopping-dio
 `
+
 Dentro da pasta dioshopping digite:
+
 `
 yarn install
 `
+
 Para instalar todos o pacotes necessários para o funcionamento do projeto.
 
 Para iniciar o server digite:
+
 `
 yarn start
 `

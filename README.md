@@ -14,9 +14,9 @@ Requisitos do Projeto:
 - Flux,Redux
 
 
-<h5>Este projeto não é mobile</h5>
+##### Este app não foi projetado para ser mobile first.
 
-<h3>Links Uteis</h3>
+## Links Uteis
 
 <a href="https://v3.mui.com/">Material UI</a>
 
@@ -28,7 +28,7 @@ Requisitos do Projeto:
 
 <a href="https://redux.js.org/">Redux</a>
 
-<h3>Como inciar o Projeto ?</h3>
+## Como inciar o Projeto ?
 
 Clone o projeto ou faça o download dos pacotes e descompacte o arquivo.
 Inicie o VSCode ou sua IDE Favorita.

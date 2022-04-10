@@ -1,6 +1,6 @@
 # Desafio
 
- - Fazer o name-projeto retornar a home( criar link ).
+ - Fazer o name-project retornar a home( criar link ).
  - Criar um footer para o app.
  - Criar uma componente global de estilo css.
  - Reproduza o projeto implementado pela expert e dê a ele a sua cara, 

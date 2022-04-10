@@ -1,18 +1,28 @@
 import React from "react";
 import { Grid, Button, TextField } from '@material-ui/core/';
 
-
 const Contatos = () =>{
     return(
         <>
-            <h1>Contatos</h1>
-            <Grid container direction="row" item xs={12}>
-                <TextField id="name" label="Name" fullWidth/>
-                <TextField id="message" label="Message" fullWidth/>
+            <Grid className="container" container spacing={10}>
+                <Grid item xs={1}>
+                </Grid>
+                <Grid className="form" item xs={10}>
+                    <div>
+                        <h3>Contatos</h3>
+                        <TextField id="name" label="Nome" fullWidth/>
+                        <TextField id="email" label="Email" fullWidth/>
+                        <TextField id="message" label="Mensagem" fullWidth/>
+                    </div>
+                    <br />
+                    <Button variant="contained" color="primary">
+                    Enviar
+                    </Button>
+                </Grid>
+                <Grid item xs={1}>
+                </Grid>
             </Grid>
-            <Button variant="contained" color="primary">
-                Sent
-            </Button>
+            
         </>
     )
 }

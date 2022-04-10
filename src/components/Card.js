@@ -6,7 +6,8 @@ import cartActions from "./store/actions/cart";
  const useStyles = makeStyles((theme) => ({
     paper: {
       padding: theme.spacing(2),
-      textAlign: 'center'
+      textAlign: 'center',
+      border:'solid rgb(252, 219, 31)'
     },
   }));
 
@@ -21,7 +22,7 @@ const Card = ({ product, children}) =>{
             <Paper className={classes.paper}>
             <Grid container direction='column'>
                 <Grid item>
-                <img width="140px" src={product.image} alt={product.name_product}/>
+                <img width="100px" src={product.image} alt={product.name_product}/>
                 <Typography variant='h6'>
                      {children}
                 </Typography>
@@ -30,6 +31,7 @@ const Card = ({ product, children}) =>{
                 </Typography>
                  </Grid>
             <Button
+                color="primary"
                 onClick={() => dispatch(cartActions.Add(cart, product))} 
                 variant="contained"
             >Adicionar</Button>

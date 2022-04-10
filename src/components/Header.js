@@ -1,23 +1,25 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { Grid, Typography, Button } from '@material-ui/core/';
+import { Grid, Typography} from '@material-ui/core/';
 import Cart from './Cart';
 
 const Header = () =>{
     return(
         <>
-            <Grid container direction="row" justify="space-between" alignItems="center" item xs={12}>
-                    <Typography variant='h3'>
-                    Dio Shopping
+            <Grid className="header" container direction="row" justify="space-between" alignItems="center" item xs={12}>
+                    <Typography className="header-name" variant='h5'>
+                        <Link to="/" >
+                            SongWriter Shop
+                        </Link>
                     </Typography>
                     <Link to="/">
-                        <Button color="primary">Home</Button>
+                        Home
                     </Link>
                     <Link to="/contato">
-                        <Button color="primary">Contato</Button>
+                        Contato
                     </Link>
                     <Cart />
-                </Grid>
+            </Grid>
         </>
     )
 }

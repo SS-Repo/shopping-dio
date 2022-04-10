@@ -37,10 +37,10 @@ const ChangeCart = (localCart) =>{
     }
 }   
 
-export default {
+export default{
     Add,
     AddItem,
     RemoveItem,
     DeleteItem,
     ChangeCart
-}
+};

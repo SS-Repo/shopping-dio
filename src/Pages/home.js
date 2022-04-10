@@ -11,7 +11,8 @@ const useStyles = makeStyles((theme) => ({
     },
     paper: {
       padding: theme.spacing(2),
-      textAlign: 'center'
+      textAlign: 'center',
+      borderLeft: 'solid rgb(252, 219, 31)'
     },
   }));
 
@@ -50,13 +51,14 @@ const HomePage = () =>{
             <Grid container spacing={3} className={classes.root}>
                     <Grid item xs={3}>
                     <Paper className={classes.paper}>
-                        <Typography variant='h5'>
+                        <Typography variant='h5' gutterBottom>
                             Categorias
+                            <hr />
                         </Typography>
                         <List>
                             {category.map( category => {
                                 return(
-                                    <Item 
+                                    <Item
                                     key = { category.id }
                                     name= { category.name } 
                                     details= { count[category.name]}

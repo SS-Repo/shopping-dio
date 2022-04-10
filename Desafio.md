@@ -11,9 +11,13 @@ Use os links úteis para agilizar a sua jornada, vamos nessa!?
 <h3>Links utilizados neste desafio</h3>
 
 <a href="https://v3.mui.com/">Material UI</a>
+
 <a href="https://getbootstrap.com/">Bootstrap</a>
+
 <a href="https://pt-br.reactjs.org/">REACT.js</a>
+
 <a href="https://facebook.github.io/flux/">Flux</a>
+
 <a href="https://redux.js.org/">Redux</a>
 
 

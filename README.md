@@ -52,6 +52,8 @@ Para iniciar o server digite:
 `
 yarn start
 `
+## Host
+<a href="https://shopping-dio.vercel.app/">shopping-dio</a>
 
 ## PREVIEW
 
